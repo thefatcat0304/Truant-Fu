@@ -1,0 +1,574 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'NoxaGothicDemoVersion-Regular';
+    src: url("../fonts/NoxaGothicDemoVersion-Regular.otf") format('opentype');
+
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+/* Common */
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: white !important;
+}
+
+input::placeholder {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: #aaa;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-fourth {
+    width: 25%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 12px 19px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    font-family: "Lato", sans-serif;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Main */
+
+#main {}
+
+#header {
+    height: 46px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+}
+
+#nav .subnav a {
+    color: #000;
+    display: block;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow {
+    font-size: 14px;
+    position: relative;
+    bottom: 1px;
+    left: 4px;
+}
+
+#header .search-btn {
+    float: right;
+    cursor: pointer;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 13px;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#slider-container {
+    position: relative;
+    width: 100%;
+    margin-top: 46px;
+    overflow: hidden;
+    /* background: url(" ../img/slider/slider1.jpg") top center / cover no-repeat; */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#content {}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 112px;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #777;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 85%;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.ticket-list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.ticket-list li {
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.ticket-list .sold-out {
+    background: #f44336;
+    color: #fff;
+    padding: 2px 8px;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+.ticket-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    margin-top: -3px;
+    background-color: #000;
+}
+
+.place-list {
+    margin-top: 32px;
+}
+
+.place-item {
+    width: 33.33333%;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 14px;
+}
+
+.place-heading {
+    font-size: 15px;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 11px 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    outline: none;
+    background: #000;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    padding: 10px 16px;
+    font-size: 15px;
+    float: right;
+}
+
+.together-section {
+    width: 100%;
+}
+
+.together-section img {
+    width: 100%;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background: #fff;
+    width: 650px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    border-radius: 8px;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #aaa;
+    padding: 18px;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+.modal-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    border-bottom: 2px solid #ddd;
+}
+
+.modal-ticket-icon {
+    font-size: 18px;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 18px 24px 0;
+}
+
+.modal-name {
+    display: flex;
+    gap: 16px;
+}
+
+.modal-name-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    padding: 11px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    font-family: "Lato", sans-serif;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-input:focus {
+    border: 2px solid#306DAA;
+    box-shadow: 0 0 2px 1px rgba(102, 191, 255, 0.5);
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: right;
+    border-top: 2px solid #ddd;
+    padding: 16px 24px;
+}
+
+#buy-ticket {
+    background-color: #1550CE;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    padding: 12px 36px;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    transition: background-color 0.1s ease;
+}
+
+#cancel-ticket {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #ddd;
+    font-size: 14px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    transition: background-color 0.1s ease;
+}
+
+#buy-ticket:hover {
+    background-color: #043cb4;
+}
+
+#cancel-ticket:hover {
+    background-color: #f5f5f5;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 22px;
+}
+
+#footer .social-list a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0 1px;
+}
+
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+}
