@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truant Fu</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon/favicon1.jpg">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">More
+                        <i class="nav-arrow fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extra</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search-btn">
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div id="slider-container">
+            <div class="slider">
+                <img src="./assets/img/slider/slider1.jpg" alt="Slide 1" class="slide active">
+                <img src="./assets/img/slider/slider2.jpg" alt="Slide 2" class="slide">
+                <img src="./assets/img/slider/slider3.jpg" alt="Slide 3" class="slide">
+                <img src="./assets/img/slider/slider4.jpg" alt="Slide 4" class="slide">
+                <img src="./assets/img/slider/slider5.jpg" alt="Slide 5" class="slide">
+                <img src="./assets/img/slider/slider6.jpg" alt="Slide 6" class="slide">
+            </div>
+            <button class="prev" onclick="prevSlide()">‹</button>
+            <button class="next" onclick="nextSlide()">›</button>
+
+        </div>
+
+        <div id="content">
+            <!-- About section -->
+            <div id="band" class="content-section">
+                <h2 class="section-heading">TRUANT FU</h2>
+                <p class="section-sub-heading">We love music!</p>
+                <p class="about-text">Truant Fu is an indie band from the capital city, where unique musical
+                    personalities converge. Formed in the summer of 2021, they are known for their bold, distinctive,
+                    and creative sound that brings powerful musical experiences to their audience. Describing
+                    themselves, Truant Fu stated, “Our band strives to explore and experiment with fresh musical
+                    elements, hoping to bring catchy and exciting experiences to listeners.” Their music blends
+                    Post-Rock and Funk-Rock, creating explosive energy and a dynamic presence on stage. Truant Fu gained
+                    wider recognition through the release of songs such as: Rối ren, Runaway, Hoa đăng, Một thời.
+                </p>
+                <div class="row member-list">
+                    <div class="col col-fourth text-center">
+                        <p class="member-name">Le Tung Lam</p>
+                        <img src="./assets/img/band/member1.jpg" alt="" class="member-img">
+                    </div>
+                    <div class="col col-fourth text-center">
+                        <p class="member-name">Tran Huu Phu</p>
+                        <img src="./assets/img/band/member2.jpg" alt="" class="member-img">
+                    </div>
+                    <div class="col col-fourth text-center">
+                        <p class="member-name">Truong Trong Thanh</p>
+                        <img src="./assets/img/band/member3.jpg" alt="" class="member-img">
+                    </div>
+                    <div class="col col-fourth text-center">
+                        <p class="member-name">Tran Suong</p>
+                        <img src="./assets/img/band/member4.jpg" alt="" class="member-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour section -->
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">TOUR DATES</h2>
+                    <p class="section-sub-heading">Remember to book your tickets!</p>
+                    <ul class="ticket-list">
+                        <li>July <span class="sold-out">Sold out</span></li>
+                        <li>August <span class="sold-out">Sold out</span></li>
+                        <li>September <span class="quantity">3</span></li>
+                    </ul>
+                    <div class="row place-list">
+                        <div class="col col-third">
+                            <img src="./assets/img/places/hanoi.jpg" alt="" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Ha Noi</h3>
+                                <p class="place-time">Mon 02 Sep 2025</p>
+                                <p class="place-desc">Truant Fu brings their indie spirit home with a live set at
+                                    Hanoi’s cozy Tranquil Books & Coffee.</p>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="col col-third">
+                            <img src="./assets/img/places/hochiminh.jpg" alt="" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Ho Chi Minh City</h3>
+                                <p class="place-time">Sat 14 Sep 2025</p>
+                                <p class="place-desc">We’re bringing the noise to Saigon. See you at Yoko Café for a
+                                    night that feels like home, just louder.</p>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="col col-third">
+                            <img src="./assets/img/places/danang.jpg" alt="" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Da Nang</h3>
+                                <p class="place-time">Wed 25 Sep 2025</p>
+                                <p class="place-desc">Our first time in Da Nang! Join us at 3A Rooftop for a night
+                                    of music, sea breeze, and everything in between.</p>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact section -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="fa-solid fa-location-dot"></i>Hanoi, Vietnam</p>
+                        <p><i class="fa-solid fa-phone"></i>Phone: +84 928371124</p>
+                        <p><i class="fa-solid fa-envelope"></i>Email: truantfu@gmail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" id="" required class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" id="" required class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-full mt-8">
+                                    <input type="text" name="" id="" required class="form-control"
+                                        placeholder="Message">
+                                </div>
+                            </div>
+                            <input type="submit" value="SEND" class="btn mt-16 pull-right">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="together-section">
+                <img src="./assets/img/band/together.jpeg" alt="">
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="social-list">
+                <a href="https://www.facebook.com/TruantFu?locale=vi_VN" target="_blank"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/truant.fu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@truantfu" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@truant.fu" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope" target="_blank"></i></a>
+            </div>
+            <p class="copyright">Made by TheFatCat</p>
+        </div>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <header class="modal-header">
+                <p class="modal-title">Get Your Tickets</p>
+            </header>
+            <div class="modal-body">
+                <div class="modal-name">
+                    <div class="modal-name-field">
+                        <label for="ticket-first-name" class="modal-label">First Name</label>
+                        <input id="ticket-first-name" type="text" class="modal-input" placeholder="First Name">
+                    </div>
+                    <div class="modal-name-field">
+                        <label for="ticket-last-name" class="modal-label">Last Name</label>
+                        <input id="ticket-last-name" type="text" class="modal-input" placeholder="Last Name">
+                    </div>
+                </div>
+                <label for="ticket-email" class="modal-label">
+                    Email Address
+                </label>
+                <input id="ticket-email" type="email" class="modal-input" placeholder="example@gmail.com">
+                <label for="ticket-quantity" class="modal-label">
+                    Number of tickets ($15 per person)
+                </label>
+                <input id="ticket-quantity" type="number" class="modal-input" placeholder="How many?">
+            </div>
+            <footer class="modal-footer">
+                <button id="cancel-ticket" class="js-cancel-ticket">Cancel </button>
+                <button id="buy-ticket" class="js-submit-btn">Get Tickets </button>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll(".js-buy-ticket")
+        const modal = document.querySelector(".js-modal")
+        const modalContainer = document.querySelector(".js-modal-container")
+        const modalClose = document.querySelector(".js-modal-close")
+        const modalCancel = document.querySelector(".js-cancel-ticket")
+        const submitBtn = document.querySelector(".js-submit-btn")
+        function showBuyTicket() {
+            modal.classList.add("open")
+            document.getElementById("ticket-first-name").value = "";
+            document.getElementById("ticket-last-name").value = "";
+            document.getElementById("ticket-email").value = "";
+            document.getElementById("ticket-quantity").value = "";
+        }
+        function hideBuyTicket() {
+            modal.classList.remove("open")
+        }
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener("click", showBuyTicket)
+        }
+        modalClose.addEventListener("click", hideBuyTicket)
+        modalCancel.addEventListener("click", hideBuyTicket)
+        modal.addEventListener("click", hideBuyTicket)
+        modalContainer.addEventListener("click", function (event) {
+            event.stopPropagation()
+        })
+        submitBtn.addEventListener("click", function () {
+            const firstName = document.getElementById("ticket-first-name").value.trim()
+            const lastName = document.getElementById("ticket-last-name").value.trim()
+            const email = document.getElementById("ticket-email").value.trim()
+            const quantity = document.getElementById("ticket-quantity").value.trim()
+            if (!firstName || !lastName || !email || !quantity) {
+                alert("Please fill in all fields.")
+                return
+            }
+            alert("Ticket reservation successful!")
+            hideBuyTicket()
+        })
+    </script>
+
+    <script>
+        let currentSlide = 0
+        const slides = document.querySelectorAll(".slide")
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index)
+            })
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length
+            showSlide(currentSlide)
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 6000)
+    </script>
+</body>
+
+</html>
